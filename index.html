@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée dans les portraits, photos d'entreprise, mariages, et événements. Elle se déplace en Ile-de-France pour des shootings à la demi-journée. Contactez-la pour capturer vos moments uniques.">
-    	<title>Photographe à Bordeaux - Nina Carducci</title>
+	<title>Photographe à Bordeaux - Nina Carducci</title>
+	<meta name="description" content="Nina Carducci, photographe à Bordeaux, spécialisée en portraits, entreprise, mariages et événements. Déplacements en Île-de-France pour shootings.">
+    	
+	<!-- Open Graph pour Facebook, LinkedIn, etc. -->
+	<meta property="og:title" content="Photographe à Bordeaux - Nina Carducci">
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portraits, photos d'entreprise, mariages, et événements. Déplacements en Île-de-France pour des shootings à la demi-journée.">
+	<meta property="og:image" content="./assets/images/card-reseaux.png">
+	<meta property="og:url" content="https://nina-carducci.github.io/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Site de Nina Carducci, photographe professionnelle">
+
+	<!-- Twitter Cards pour Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Photographe à Bordeaux - Nina Carducci">
+	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portraits, photos d'entreprise, mariages, et événements. Déplacements en Île-de-France pour des shootings à la demi-journée.">
+	<meta name="twitter:image" content="./assets/images/card-reseaux.png">
+	<meta name="twitter:url" content="https://nina-carducci.github.io/">
+	<meta name="twitter:site" content="@Nina_carducci">
+	<link rel="icon" href="./favicon-32x32.png" type="image/x-icon">
+	
+	<!--CSS-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
+
+	<!--Préchargement de la première photo du carrousel-->
+	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-1200w.webp" type="image/webp" as="image" media="(min-width: 769px) and (max-width: 1200px)">
+	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-768.webp" type="image/webp" as="image" media="(ax-width: 769px)">
+
+	<!--JS-->
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js"></script>
@@ -38,23 +63,43 @@
 			</div>
 			<div class="carousel-inner">
 				<figure class="carousel-item active">
-					<img src="./assets/images/slider/buisness-photographe-nina-carducci.webp" class="d-block w-100" alt="Photographie 'le buisness' par la photographe Nina Carducci">
+					<img src="./assets/images/slider/buisness-photographe-nina-carducci-1920w.webp" 
+						srcset="./assets/images/slider/buisness-photographe-nina-carducci-768w.webp 768w, 
+						./assets/images/slider/buisness-photographe-nina-carducci-1200w.webp 1200w, 
+						./assets/images/slider/buisness-photographe-nina-carducci-1920w.webp 1920w" 
+			  			sizes="(max-width: 768px) 768px, 
+				    			  (max-width: 1200px) 1200px, 
+				    		  	  1920px"
+				    	class="d-block w-100" alt="Photographie 'le buisness' par la photographe Nina Carducci">
 				</figure>
 				<figure class="carousel-item">
-					<img src="./assets/images/slider/photo-concert-bordeaux-photographe-carducci.webp" class="d-block w-100" alt="Photographie d'un concert à Bordeaux, prise de vue par Nina Carducci">
+					<img src="./assets/images/slider/photo-concert-bordeaux-photographe-carducci-1920w.webp" 
+						srcset="./assets/images/slider/photo-concert-bordeaux-photographe-carducci-768w.webp 768w, 
+						./assets/images/slider/photo-concert-bordeaux-photographe-carducci-1200w.webp 1200w, 
+						./assets/images/slider/photo-concert-bordeaux-photographe-carducci-1920w.webp 1920w" 
+					  	sizes="(max-width: 768px) 768px, 
+					    		  (max-width: 1200px) 1200px, 
+					    		  1920px"
+						class="d-block w-100" alt="Photographie d'un concert à Bordeaux, prise de vue par Nina Carducci">
 				</figure>
 				<figure class="carousel-item">
-					<img src="./assets/images/slider/photo-mariage-bordeaux-.photographe-carducci.webp" class="d-block w-100" alt="Photo de mariage à Bordeaux - Carducci">
+					<img src="./assets/images/slider/photo-mariage-bordeaux-.photographe-carducci-1920w.webp" 
+						srcset="./assets/images/slider/photo-mariage-bordeaux-.photographe-carducci-768w.webp 768w, 
+						./assets/images/slider/photo-mariage-bordeaux-.photographe-carducci-1200w.webp 1200w, 
+						./assets/images/slider/photo-mariage-bordeaux-.photographe-carducci-1920w.webp 1920w" 
+					  	sizes="(max-width: 768px) 768px, 
+							  (max-width: 1200px) 1200px, 
+							  1920px"
+						class="d-block w-100" 
+						alt="Photo de mariage à Bordeaux - Carducci">
 				</figure>
 			</div>
 			<nav aria-label="Contrôles du carousel">
 				<button aria-label="Précédent" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
 				</button>
 				<button aria-label="suivant" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
 				</button>
 			</nav>
 		</section>
@@ -62,7 +107,14 @@
 </header>
 <section id="about">
 	<figure class="picture left">
-		<img src="./assets/images/nina-carducci-photographe-professionnelle.webp" alt="Nina Carducci, photographe à Bordeaux 33">
+		<img src="./assets/images/nina-carducci-photographe-professionnelle-1920w.webp" 
+			srcset="./assets/images/nina-carducci-photographe-professionnelle-768w.webp 768w, 
+			./assets/images/nina-carducci-photographe-professionnelle-1200w.webp 1200w, 
+			./assets/images/nina-carducci-photographe-professionnelle-1920w.webp 1920w" 
+			sizes="(max-width: 768px) 768px, 
+				  (max-width: 1200px) 1200px, 
+				  1920px"
+			alt="Nina Carducci, photographe à Bordeaux 33">
 	</figure>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -70,7 +122,7 @@
 		<p>Nous passons notre vie à chercher le bonheur. Et lorsque nous le trouvons, nous souhaitons <strong class="about">l'immortaliser à travers des photographies</strong>, pour le partager avec ceux qui comptent le plus pour nous ou le montrer au monde entier.</p>
 		<p>Immortalisez vos moments précieux avec un photographe professionnel</p>
 		<p>
-		C'est exactement ce que je vous propose : capturer ces moments précieux avec mon regard unique, mon approche artistique, et ma technique de photographe professionnel. <strong class="about"> Ces moments immortalisés</strong>, vous permettront d'y retrouver amour, bonheur, tendresse et lumière chaque fois que vous poserez les yeux sur vos photos.</p>
+		C'est exactement ce que je vous propose : capturer ces moments précieux avec mon regard unique, mon approche artistique, et ma technique de photographe. <strong class="about"> Ces moments immortalisés</strong>, vous permettront d'y retrouver amour, bonheur, tendresse et lumière chaque fois que vous poserez les yeux sur vos photos.</p>
 		<p>Découvrez mon portfolio et contactez-moi pour discuter de votre <strong class="about">projet photographique à Bordeaux ou en Île-de-France</strong>.</p>
 	</div>
 </section>
@@ -101,34 +153,49 @@
 <section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<section class="service">
-			<h3>Shooting photo</h3>
+		<section class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				<h3 itemprop="name">Shooting photo</h3>
+				<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div>
-				<p class="service__price"><span itemprop="price" content="350">350€</span>/demi journée</p>
+				<p class="service__price">
+					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					    <meta itemprop="priceCurrency" content="EUR" />
+					    <span itemprop="price" content="350">350€/demi-journée</span>
+					</span>
+				</p>
 				<span itemprop="termsOfService">Matériel, déplacement inclus</span>
 			</div>
 
 		</section>
-		<section class="service">
+		<section class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				<h3 itemprop="name">Retouches photos</h3>
+				<p itemprop="description">Vous souhaitez <strong>retoucher vos photos avec un résultat professionnel </strong>? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
 			<div>
-				<p class="service__price"><span itemprop="price" content="50">50€/photo</span></p>
-				<span itemprop="termsOfService">2 AR par photo</span>
+				<p class="service__price">
+					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					    <meta itemprop="priceCurrency" content="EUR" />
+					    <span itemprop="price" content="50">50€ pour une photo</span>
+					</span>
+				 </p>
+				 <span itemprop="termsOfService">2 AR par photo</span>
 			</div>
 		</section>
-		<section class="service">
+		<section class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				<h3 itemprop="name">Album photos</h3>
+				<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div>
-				<p class="service__price"><span itemprop="price" content="350">400€</span> album A4</p>
+				<p class="service__price">
+					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					    <meta itemprop="priceCurrency" content="EUR" />
+					    <span itemprop="price" content="400">400€ l'album A4</span>
+					</span>
+				</p>
 				<span itemprop="termsOfService">30 pages recto/verso</span>
 			</div>
 		</section>
@@ -158,9 +225,108 @@
 			</form>
 		</div>
 		<figure class="picture right">
-			<img src="./assets/images/appareil-photo.webp" alt="Appareil photo de la photographe Nina Carducci"  loading="lazy">
+			<img src="./assets/images/appareil-photo-1920w.webp"
+				srcset="./assets/images/appareil-photo-768w.webp 768w, 
+				./assets/images/appareil-photo-1200w.webp 1200w, 
+				./assets/images/appareil-photo-1920w.webp 1920w" 
+				alt="Appareil photo de la photographe Nina Carducci" loading="lazy">
 		</figure>
 	</div>
 </section>
+<footer>
+	<div class="footer-content" itemscope itemtype="https://schema.org/Organization">
+		<div class="footer-logo">
+			<img src="./assets/images/nina-carducci-photographe-professionnel-100x100.webp" alt="Nina Carducci Photographie Logo" itemprop="logo" loading="lazy" width="100"  height="100" style="max-width: 100%; height: auto;">
+		</div>
+		<div class="nina-adresse">
+			<h2 itemprop="name">Nina Carducci</h2>
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<p itemprop="streetAddress">68 avenue Alsace-Lorraine</p>
+				<p>
+					<span itemprop="postalCode">33200</span> 
+					<span itemprop="addressLocality">Bordeaux</span> 
+				</p>
+			</div>
+		</div>
+		<div class="tel-hor">
+			<p>Téléphone : <span itemprop="telephone">05-56-67-78-89</span></p>		
+			<p itemprop="openingHours">Du lundi au vendredi de 10h à 19h</p>
+		</div>
+	</div>
+   
+	<!-- JSON-LD structured data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Nina Carducci Photographie",
+			"url": "https://nina-carducci.github.io/",
+			"logo": "https://nina-carducci.github.io/assets/images/LogoNinaCarducci.png",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+33-5-56-67-78-89",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "68 avenue Alsace-Lorraine",
+					"addressLocality": "Bordeaux",
+					"postalCode": "33200",
+					"addressCountry": "FR"
+				},
+				"contactType": "Customer Service",
+				"areaServed": [
+					{
+						"@type": "Place",
+						"name": "Bordeaux"
+					},
+					{
+						"@type": "Place",
+						"name": "Île-de-France"
+					}
+				],
+				"availableLanguage": "French"
+			},
+			"openingHours": [
+				"Mo-Fr 10:00-19:00"
+			],
+			"service": [
+				{
+					"@type": "Service",
+					"name": "Shooting photo",
+					"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable.",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "350"
+					}
+				},
+				{
+					"@type": "Service",
+					"name": "Retouches photos",
+					"description": "Retouche professionnelle d'une photo pour des publications optimales.",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "50"
+					}
+				},
+				{
+					"@type": "Service",
+					"name": "Album photos",
+					"description": "Album A4 de 30 pages recto/verso.",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "50"
+					}
+				}
+			],
+			"sameAs": [
+				"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+				"https://www.facebook.com/people/Nina-Carducci/pfbid02EqMKuUhRgyFNGxdRMm8LeM9isvZVZqkyyjaHw1rmVS1FgoysVBHVfg1C8zHGCAxCl/"
+			]
+		}
+		</script>
+   	</footer>
+	
 </body>
 </html>
