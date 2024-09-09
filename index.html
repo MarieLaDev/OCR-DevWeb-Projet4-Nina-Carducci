@@ -55,7 +55,8 @@
 		</nav>
 	</div>
 	<div id="header">
-		<section aria-label="Galerie d'images en carousel" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<!--Carrousel d'images-->
+		<section aria-label="Galerie d'images en carrousel" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,6 +106,7 @@
 		</section>
 	</div>
 </header>
+<!-- Section à propos de moi -->
 <section id="about">
 	<figure class="picture left">
 		<img src="./assets/images/nina-carducci-photographe-professionnelle-1920w.webp" 
@@ -126,6 +128,7 @@
 		<p>Découvrez mon portfolio et contactez-moi pour discuter de votre <strong class="about">projet photographique à Bordeaux ou en Île-de-France</strong>.</p>
 	</div>
 </section>
+<!-- Galerie photo - Portfolio -->
 <section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
@@ -141,6 +144,7 @@
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/photographie-personnel-entreprise-bordeaux.webp" alt="Photographie, le rire en entreprise"  loading="lazy">
 		</div>
 	</div>
+	<!--Première citation-->
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -150,6 +154,7 @@
 		</figure>
 	</div>
 </section>
+<!-- Section mes services -->
 <section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
@@ -167,7 +172,6 @@
 				</p>
 				<span itemprop="termsOfService">Matériel, déplacement inclus</span>
 			</div>
-
 		</section>
 		<section class="service" itemscope itemtype="http://schema.org/Service">
 			<div class="service__description">
@@ -201,6 +205,7 @@
 		</section>
 	</div>
 </section>
+<!-- Deuxième citation -->
 <div class="quote">
 	<figure>
 		<blockquote>
@@ -209,6 +214,7 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+<!-- Section formulaire de contact -->
 <section id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -237,6 +243,7 @@
 	</div>
 </section>
 <footer>
+	<!-- footer en schema.org-->
 	<div class="footer-content" itemscope itemtype="https://schema.org/Organization">
 		<div class="footer-logo">
 			<img src="./assets/images/nina-carducci-photographe-professionnel-100x100.webp" alt="Nina Carducci Photographie Logo" itemprop="logo" loading="lazy" width="100"  height="100" style="max-width: 100%; height: auto;">
@@ -259,7 +266,7 @@
 		</div>
 	</div>
    
-	<!-- JSON-LD structured data -->
+	<!-- JSON-LD données structurées -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
