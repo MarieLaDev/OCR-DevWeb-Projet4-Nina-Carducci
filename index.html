@@ -22,17 +22,17 @@
 	<meta name="twitter:url" content="https://nina-carducci.github.io/">
 	<meta name="twitter:site" content="@Nina_carducci">
 	<link rel="icon" href="./favicon-32x32.png" type="image/x-icon">
-	
+
+	<!--Préchargement de la première photo du carrousel-->
+	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-1200w.webp" type="image/webp" media="(min-width: 769px) and (max-width: 1200px)">
+	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-768w.webp" type="image/webp" media="(max-width: 769px)">
+
 	<!--CSS-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-
-	<!--Préchargement de la première photo du carrousel-->
-	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-1200w.webp" type="image/webp" as="image" media="(min-width: 769px) and (max-width: 1200px)">
-	<link rel="preload" as="image" href="./assets/images/slider/buisness-photographe-nina-carducci-768.webp" type="image/webp" as="image" media="(ax-width: 769px)">
 
 	<!--JS-->
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -161,7 +161,7 @@
 			<div>
 				<p class="service__price">
 					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-					    <meta itemprop="priceCurrency" content="EUR" />
+					    <meta itemprop="priceCurrency" content="EUR">
 					    <span itemprop="price" content="350">350€/demi-journée</span>
 					</span>
 				</p>
@@ -177,7 +177,7 @@
 			<div>
 				<p class="service__price">
 					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-					    <meta itemprop="priceCurrency" content="EUR" />
+					    <meta itemprop="priceCurrency" content="EUR">
 					    <span itemprop="price" content="50">50€ pour une photo</span>
 					</span>
 				 </p>
@@ -192,7 +192,7 @@
 			<div>
 				<p class="service__price">
 					<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-					    <meta itemprop="priceCurrency" content="EUR" />
+					    <meta itemprop="priceCurrency" content="EUR">
 					    <span itemprop="price" content="400">400€ l'album A4</span>
 					</span>
 				</p>
@@ -214,14 +214,14 @@
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
+			<form action="javascript:void(0);" method="post">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+				<input type="submit" value="Envoyer">
 			</form>
 		</div>
 		<figure class="picture right">
@@ -229,6 +229,9 @@
 				srcset="./assets/images/appareil-photo-768w.webp 768w, 
 				./assets/images/appareil-photo-1200w.webp 1200w, 
 				./assets/images/appareil-photo-1920w.webp 1920w" 
+				sizes="(max-width: 768px) 768px, 
+				    	  (max-width: 1200px) 1200px, 
+				    	  1920px"
 				alt="Appareil photo de la photographe Nina Carducci" loading="lazy">
 		</figure>
 	</div>
@@ -244,7 +247,7 @@
 				<p itemprop="streetAddress">68 avenue Alsace-Lorraine</p>
 				<p>
 					<span itemprop="postalCode">33200</span> 
-					<span itemprop="addressLocality">Bordeaux</span> 
+					<span itemprop="addressLocality">Bordeaux</span><span> - </span><span itemprop="addressCountry">France</span> 
 				</p>
 			</div>
 		</div>
