@@ -335,6 +335,10 @@ input[type="submit"] {
 	font-weight: 600;
 }
 
+.tel-hor a {
+	color: #696333;
+}
+
 
 @media (max-width: 1460px) {
 	.about-me__title {
