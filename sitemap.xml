@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://nina-carducci.github.io/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>1.00</priority>
+    <title>Accueil</title>
+    <description>Page principale avec un aperçu global de Nina Carducci et de son travail</description>
+  </url>
+  <url>
+    <loc>https://nina-carducci.github.io/#about</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.80</priority>
+    <title>À propos</title>
+    <description>Découvrez qui est Nina Carducci, ses passions et son parcours</description>
+  </url>
+  <url>
+    <loc>https://nina-carducci.github.io/#gallery</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.80</priority>
+    <title>Galerie</title>
+    <description>Une collection d'œuvres et de photos de Nina</description>
+  </url>
+  <url>
+    <loc>https://nina-carducci.github.io/#services</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.80</priority>
+    <title>Services</title>
+    <description>Les services proposés par Nina dans son domaine d'expertise</description>
+  </url>
+  <url>
+    <loc>https://nina-carducci.github.io/#contact</loc>
+    <lastmod>2024-09-12</lastmod>
+    <priority>0.80</priority>
+    <title>Contact</title>
+    <description>Comment entrer en contact avec Nina Carducci pour des collaborations</description>
+  </url>
+</urlset>
