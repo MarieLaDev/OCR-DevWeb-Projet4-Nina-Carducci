@@ -1,3 +1,8 @@
+![Lighthouse](https://img.shields.io/badge/Use-Lighthouse-green)
+![Meta Social](https://img.shields.io/badge/Add%20Code%20Meta-Social%20Media-orange)
+![Use WebP](https://img.shields.io/badge/Use-WebP-red)
+![JSON-LD](https://img.shields.io/badge/Use-JSON--LD-yellow)
+
 # OBJECTIFS DU PROJET
 - Débugger le site
 - Faire un rapport des optimisations pouvant être réalisées
