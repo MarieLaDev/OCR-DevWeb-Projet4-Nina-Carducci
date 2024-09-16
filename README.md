@@ -9,5 +9,5 @@
 - Optimiser les performances du site
 - Optimiser le SEO technique
 - Ajouter le référencement local et les réseaux sociaux
-- Corriger l'accesibilité
+- Corriger l'accessibilité
 - Génération d'un rapport (avant après)
