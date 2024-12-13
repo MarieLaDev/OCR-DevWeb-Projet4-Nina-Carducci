@@ -3,6 +3,9 @@
 ![Use WebP](https://img.shields.io/badge/Use-WebP-red)
 ![JSON-LD](https://img.shields.io/badge/Use-JSON--LD-yellow)
 
+# Lien du site en ligne
+https://www.instant-web.fr/nina-carducci/
+
 # OBJECTIFS DU PROJET
 - Débugger le site
 - Faire un rapport des optimisations pouvant être réalisées
